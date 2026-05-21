@@ -23,8 +23,8 @@ Biomedical EEG AI papers often report classification metrics without enough deta
 Use the project Python interpreter configured for this workspace:
 
 ```powershell
-D:\AI_Env\dl_5060ti\Scripts\python.exe -m pip install -e .[dev]
-D:\AI_Env\dl_5060ti\Scripts\python.exe -m neuromed_xai_benchmark.cli demo
+D:\AI_Env\dl_5060ti\python.exe -m pip install -e .[dev]
+D:\AI_Env\dl_5060ti\python.exe -m neuromed_xai_benchmark.cli demo
 ```
 
 If that interpreter is not available yet, create or repair the environment first, then rerun the commands.
