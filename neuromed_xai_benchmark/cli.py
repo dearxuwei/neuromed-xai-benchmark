@@ -15,6 +15,11 @@ app = typer.Typer(help="NeuroMed-XAI Benchmark research prototype.")
 console = Console()
 
 
+@app.callback()
+def main() -> None:
+    """Command group for NeuroMed-XAI Benchmark."""
+
+
 @app.command()
 def demo(output: Path = Path("outputs/demo_report.md")) -> None:
     """Run a synthetic EEG benchmark demo and write a report."""
