@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neuromed-xai-benchmark"
+version = "0.1.0"
+description = "Interpretable EEG benchmarks for biomedical AI research."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "NeuroMed-XAI Benchmark Contributors" }]
+dependencies = [
+  "numpy>=1.24",
+  "pydantic>=2.0",
+  "typer>=0.12",
+  "rich>=13.0",
+  "scikit-learn>=1.4",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.5",
+]
+eeg = [
+  "mne>=1.7",
+  "scipy>=1.11",
+  "braindecode>=0.8",
+]
+xai = [
+  "matplotlib>=3.8",
+  "seaborn>=0.13",
+  "captum>=0.7",
+]
+
+[project.scripts]
+neuromed-xai-benchmark = "neuromed_xai_benchmark.cli:app"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["neuromed_xai_benchmark*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
