@@ -1,0 +1,77 @@
+<svg width="2400" height="1350" viewBox="0 0 2400 1350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="2400" y2="1350"><stop stop-color="#03040E"/><stop offset=".52" stop-color="#111B38"/><stop offset="1" stop-color="#02030A"/></linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1432 580) rotate(96) scale(710 510)"><stop stop-color="#71E8FF" stop-opacity=".45"/><stop offset=".44" stop-color="#B47CFF" stop-opacity=".24"/><stop offset="1" stop-color="#B47CFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="amber" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1690 822) rotate(24) scale(500 330)"><stop stop-color="#FFB86B" stop-opacity=".44"/><stop offset="1" stop-color="#FFB86B" stop-opacity="0"/></radialGradient>
+    <linearGradient id="evidence" x1="820" y1="420" x2="2020" y2="892" gradientUnits="userSpaceOnUse"><stop stop-color="#76E8FF"/><stop offset=".45" stop-color="#A78BFA"/><stop offset="1" stop-color="#FFB86B"/></linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFFFFF" stop-opacity=".15"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".03"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="44"/></filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="9" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <clipPath id="brain"><path d="M1175 280c-82-12-160 34-190 111-48-5-96 13-128 50-37 43-43 106-15 155-55 25-91 80-91 143 0 88 71 159 159 159h104c27 76 100 130 186 130h316c101 0 184-82 184-184 0-28-6-55-18-79 58-29 96-88 96-157 0-98-79-177-177-177-25 0-49 5-71 15-55-102-169-164-289-145-21-14-43-21-66-21Z"/></clipPath>
+  </defs>
+  <rect width="2400" height="1350" fill="url(#bg)"/>
+  <circle cx="1432" cy="580" r="690" fill="url(#core)" filter="url(#blur)"/>
+  <circle cx="1690" cy="822" r="455" fill="url(#amber)" filter="url(#blur)"/>
+  <g opacity=".18">
+    <path d="M0 1112H2400M0 986H2400M0 860H2400M0 734H2400M0 608H2400M0 482H2400" stroke="#9BEAFF" stroke-opacity=".05"/>
+    <path d="M340 124V1226M680 124V1226M1020 124V1226M1360 124V1226M1700 124V1226M2040 124V1226" stroke="#9BEAFF" stroke-opacity=".035"/>
+  </g>
+
+  <g transform="translate(728 178)">
+    <g clip-path="url(#brain)">
+      <rect width="1120" height="920" fill="#061126" fill-opacity=".76"/>
+      <path d="M96 594c80-64 154-71 224-21 58 41 112 45 164 12 58-37 110-45 156-23 40 20 76 58 107 114 60 109 156 118 286 25" stroke="url(#evidence)" stroke-width="8" stroke-linecap="round"/>
+      <path d="M96 594c80-64 154-71 224-21 58 41 112 45 164 12 58-37 110-45 156-23 40 20 76 58 107 114 60 109 156 118 286 25" stroke="#DDFBFF" stroke-opacity=".09" stroke-width="34" stroke-linecap="round"/>
+      <path d="M116 402c90-40 166-40 226 0 64 42 128 47 191 16 79-39 158-21 236 53 64 60 138 72 223 34" stroke="#7FE8FF" stroke-opacity=".32" stroke-width="4" stroke-linecap="round"/>
+      <path d="M140 762c76-43 148-50 217-19 59 26 112 20 159-16 67-51 143-50 229 6 92 60 182 54 270-17" stroke="#FFB86B" stroke-opacity=".30" stroke-width="4" stroke-linecap="round"/>
+      <g filter="url(#glow)">
+        <circle cx="240" cy="372" r="14" fill="#7FE8FF"/><circle cx="376" cy="432" r="16" fill="#A78BFA"/><circle cx="526" cy="402" r="14" fill="#7FE8FF"/><circle cx="674" cy="478" r="17" fill="#FFB86B"/><circle cx="824" cy="560" r="14" fill="#A78BFA"/><circle cx="956" cy="512" r="15" fill="#7FE8FF"/>
+        <circle cx="280" cy="666" r="16" fill="#FFB86B"/><circle cx="484" cy="606" r="15" fill="#7FE8FF"/><circle cx="734" cy="724" r="16" fill="#A78BFA"/><circle cx="940" cy="750" r="14" fill="#FFB86B"/>
+      </g>
+      <path d="M240 372L376 432L526 402L674 478L824 560L956 512M280 666L484 606L734 724L940 750" stroke="#FFFFFF" stroke-opacity=".11" stroke-width="2" stroke-dasharray="8 10"/>
+    </g>
+    <path d="M1175 280c-82-12-160 34-190 111-48-5-96 13-128 50-37 43-43 106-15 155-55 25-91 80-91 143 0 88 71 159 159 159h104c27 76 100 130 186 130h316c101 0 184-82 184-184 0-28-6-55-18-79 58-29 96-88 96-157 0-98-79-177-177-177-25 0-49 5-71 15-55-102-169-164-289-145-21-14-43-21-66-21Z" stroke="#D9F9FF" stroke-opacity=".26" stroke-width="3"/>
+  </g>
+
+  <g transform="translate(214 390)">
+    <rect width="566" height="424" rx="34" fill="url(#glass)" stroke="#CFF8FF" stroke-opacity=".17"/>
+    <text x="46" y="70" fill="#DDFBFF" font-size="29" font-weight="700" font-family="Inter, Segoe UI, Arial">SHAP-guided EEG evidence</text>
+    <text x="46" y="108" fill="#AFC7E8" font-size="19" font-family="Inter, Segoe UI, Arial">method motif from seizure XAI studies</text>
+    <g transform="translate(48 150)">
+      <path d="M0 38c30-22 51-22 62 0 11 23 26 23 45 0 19-22 38-22 57 0 19 23 38 23 57 0 19-22 38-22 57 0 19 23 40 23 63 0" stroke="#7FE8FF" stroke-width="4" stroke-linecap="round"/>
+      <path d="M0 112c36-18 67-8 92 31 25 39 56 39 92 0 37-39 73-39 110 0 36 39 73 39 110 0 36-39 73-49 110-31" stroke="#A78BFA" stroke-width="4" opacity=".88" stroke-linecap="round"/>
+      <path d="M0 190c54-12 96 4 124 49 28 44 61 44 101 0 40-44 79-44 118 0 40 44 86 60 139 48" stroke="#FFB86B" stroke-width="4" opacity=".85" stroke-linecap="round"/>
+    </g>
+    <text x="46" y="350" fill="#FFCF9A" font-size="24" font-weight="700" font-family="Inter, Segoe UI, Arial">prior evidence: &gt;95% with 5 channels / 6 features</text>
+    <text x="46" y="386" fill="#BFD5F2" font-size="18" font-family="Inter, Segoe UI, Arial">Sensors 2023 seizure-detection study</text>
+  </g>
+
+  <g transform="translate(1668 748)">
+    <rect width="544" height="342" rx="36" fill="url(#glass)" stroke="#CFF8FF" stroke-opacity=".18"/>
+    <text x="42" y="68" fill="#F4FCFF" font-size="29" font-weight="700" font-family="Inter, Segoe UI, Arial">Prototype explanations</text>
+    <text x="42" y="106" fill="#AFC7E8" font-size="19" font-family="Inter, Segoe UI, Arial">self-attention prototypes aligned to EEG biomarkers</text>
+    <g transform="translate(48 152)">
+      <rect x="0" y="0" width="124" height="84" rx="15" fill="#7FE8FF" fill-opacity=".12" stroke="#7FE8FF" stroke-opacity=".28"/>
+      <path d="M14 44c22-16 39-16 51 0 13 16 30 16 51 0" stroke="#7FE8FF" stroke-width="3" stroke-linecap="round"/>
+      <rect x="146" y="0" width="124" height="84" rx="15" fill="#A78BFA" fill-opacity=".14" stroke="#A78BFA" stroke-opacity=".30"/>
+      <path d="M160 48c16-34 34-34 52 0 18 34 36 34 54 0" stroke="#A78BFA" stroke-width="3" stroke-linecap="round"/>
+      <rect x="292" y="0" width="124" height="84" rx="15" fill="#FFB86B" fill-opacity=".15" stroke="#FFB86B" stroke-opacity=".30"/>
+      <path d="M306 38c18 18 36 18 54 0s36-18 54 0" stroke="#FFB86B" stroke-width="3" stroke-linecap="round"/>
+    </g>
+    <text x="48" y="282" fill="#FFCF9A" font-size="22" font-weight="700" font-family="Inter, Segoe UI, Arial">spindles · slow waves · relevance weights</text>
+  </g>
+
+  <g transform="translate(132 142)">
+    <text fill="#8FDFFF" font-size="21" letter-spacing="5" font-family="Inter, Segoe UI, Arial">EEG · XAI · BIOMEDICAL BENCHMARK</text>
+    <text y="114" fill="#F6FBFF" font-size="88" font-weight="780" font-family="Inter, Segoe UI, Arial">NeuroMed-XAI</text>
+    <text y="210" fill="#F6FBFF" font-size="88" font-weight="780" font-family="Inter, Segoe UI, Arial">Benchmark</text>
+    <text y="284" fill="#A9C6E8" font-size="30" font-family="Inter, Segoe UI, Arial">Interpretable EEG evidence for biomedical AI research</text>
+  </g>
+
+  <g transform="translate(132 996)">
+    <rect width="848" height="130" rx="28" fill="url(#glass)" stroke="#CFF8FF" stroke-opacity=".14"/>
+    <text x="36" y="48" fill="#DDFBFF" font-size="25" font-weight="700" font-family="Inter, Segoe UI, Arial">From benchmark scores to reportable evidence</text>
+    <text x="36" y="88" fill="#AFC7E8" font-size="21" font-family="Inter, Segoe UI, Arial">subject-wise split · channel attribution · feature reduction · error cases</text>
+  </g>
+  <text x="132" y="1238" fill="#7FA3D1" font-size="21" font-family="Inter, Segoe UI, Arial">Visual references: EEG disease AI review 2024; XAI seizure detection 2023; EEG-SESM sleep staging 2024. Research prototype, not clinical diagnosis.</text>
+</svg>
