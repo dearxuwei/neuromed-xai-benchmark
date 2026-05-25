@@ -7,7 +7,7 @@ name = "neuromed-xai-benchmark"
 version = "0.1.0"
 description = "Interpretable EEG benchmarks for biomedical AI research."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.9"
 license = { text = "MIT" }
 authors = [{ name = "NeuroMed-XAI Benchmark Contributors" }]
 dependencies = [
