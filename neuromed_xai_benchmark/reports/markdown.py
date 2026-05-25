@@ -35,6 +35,8 @@ def write_markdown_report(
                 "",
                 f"- Accuracy: {result.accuracy:.3f}",
                 f"- Macro F1: {result.macro_f1:.3f}",
+                f"- Train samples: {result.split.n_train}",
+                f"- Test samples: {result.split.n_test}",
                 "",
                 "## Channel Attribution",
                 "",

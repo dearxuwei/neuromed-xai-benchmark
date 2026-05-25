@@ -121,18 +121,18 @@ def draw_pipeline(ax):
     ax.text(
         0.01,
         0.855,
-        "Figure 1 style schematic. The current repository implements synthetic EEG generation, group split, PSD bandpower baseline, channel attribution, and markdown reporting.",
+        "Research pain point: EEG medical AI is often hard to audit because leakage, preprocessing choices, metrics, and explanation evidence are not reported in one reproducible route.",
         fontsize=8.5,
         color=COLORS["muted"],
         ha="left",
         va="top",
     )
     stages = [
-        ("1 EEG cohort", "samples x channels\nx time + subjects", COLORS["cyan"]),
+        ("1 EEG cohort", "samples x channels x time\nlabels + subject ids", COLORS["cyan"]),
         ("2 Split", "GroupShuffleSplit\nsubject-wise holdout", COLORS["blue"]),
-        ("3 Features", "FFT power spectrum\nmean bandpower", COLORS["violet"]),
-        ("4 Model", "RandomForest\nPSD baseline", COLORS["amber"]),
-        ("5 XAI report", "channel attribution\nmetrics + narrative", COLORS["green"]),
+        ("3 Features", "FFT power spectrum\nPSD / bandpower", COLORS["violet"]),
+        ("4 Model", "RandomForest baseline\nfuture deep models", COLORS["amber"]),
+        ("5 XAI report", "channel attribution\nmetrics + caveats", COLORS["green"]),
     ]
     xs = np.linspace(0.02, 0.82, len(stages))
     for idx, (title, body, color) in enumerate(stages):
@@ -142,7 +142,7 @@ def draw_pipeline(ax):
     ax.text(
         0.02,
         0.13,
-        "Design references: EEG disease AI review, explainable BCI review, SHAP seizure detection, prototype sleep staging, and Nature/IEEE biomedical AI figure conventions.",
+        "Literature anchors: EEG disease AI review; XAI for BCI review; SHAP seizure detection; interpretable seizure features; graph attention; prototype sleep staging; WaveSleepNet.",
         fontsize=7.5,
         color=COLORS["muted"],
         ha="left",
@@ -239,14 +239,15 @@ def draw_report(ax, dataset, result, attribution):
 
 def draw_method_matrix(ax):
     panel_label(ax, "f")
-    ax.set_title("Implementation and extension map", loc="left", fontsize=10, fontweight="bold")
+    ax.set_title("Reference algorithms mapped to benchmark modules", loc="left", fontsize=10, fontweight="bold")
     clean(ax)
     ax.set_xlim(0, 1)
     ax.set_ylim(0, 1)
     rows = [
-        ("implemented", "make_synthetic_eeg", "GroupShuffleSplit", "PSD + RF", "channel scores"),
-        ("next datasets", "TUH / CHB-MIT", "subject/session split", "deep baselines", "SHAP/prototypes"),
-        ("report guards", "task metadata", "leakage notes", "uncertainty", "error cases"),
+        ("EEG reviews", "cohort metadata", "subject split", "PSD/RF", "report caveats"),
+        ("SHAP seizure", "feature evidence", "leakage notes", "feature reduction", "channel rank"),
+        ("prototype sleep", "signal snippets", "session split", "deep encoder", "prototype tiles"),
+        ("this repo", "EEGDataset", "SplitIndices", "BaselineResult", "BenchmarkRun"),
     ]
     cols = ["status", "data", "split", "model", "XAI/report"]
     x0 = [0.02, 0.19, 0.40, 0.59, 0.76]
@@ -255,18 +256,18 @@ def draw_method_matrix(ax):
         ax.text(x, 0.86, col, fontsize=7.5, fontweight="bold", color=COLORS["ink"], ha="left")
         ax.plot([x, x + w], [0.82, 0.82], color=COLORS["line"], lw=1)
     for r, row in enumerate(rows):
-        y = 0.68 - r * 0.22
-        color = [COLORS["green"], COLORS["blue"], COLORS["amber"]][r]
+        y = 0.70 - r * 0.17
+        color = [COLORS["cyan"], COLORS["violet"], COLORS["amber"], COLORS["green"]][r]
         for x, w, text in zip(x0, widths, row):
-            ax.add_patch(FancyBboxPatch((x, y), w, 0.14, boxstyle="round,pad=0.007,rounding_size=0.012", fc="#FFFFFF", ec=COLORS["line"], lw=0.7))
-            ax.text(x + 0.008, y + 0.07, text, fontsize=6.6, color=color if x == x0[0] else COLORS["muted"], va="center", ha="left")
+            ax.add_patch(FancyBboxPatch((x, y), w, 0.105, boxstyle="round,pad=0.007,rounding_size=0.012", fc="#FFFFFF", ec=COLORS["line"], lw=0.7))
+            ax.text(x + 0.008, y + 0.053, text, fontsize=6.4, color=color if x == x0[0] else COLORS["muted"], va="center", ha="left")
 
 
 def main():
     dataset = make_synthetic_eeg()
     result = fit_psd_baseline(dataset)
     attribution = estimate_channel_importance(dataset)
-    out = Path(__file__).with_name("cover-neuromed-xai-benchmark-v5.svg")
+    out = Path(__file__).with_name("cover-neuromed-xai-benchmark-v6.svg")
     fig = plt.figure(figsize=(16, 9), facecolor="white", constrained_layout=False)
     gs = fig.add_gridspec(
         nrows=3,

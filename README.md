@@ -1,6 +1,6 @@
 # NeuroMed-XAI Benchmark
 
-![NeuroMed-XAI Benchmark method figure](promo/cover-neuromed-xai-benchmark-v5.svg)
+![NeuroMed-XAI Benchmark method figure](promo/cover-neuromed-xai-benchmark-v6.svg)
 
 Interpretable EEG benchmarks for biomedical AI research.
 
