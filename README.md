@@ -1,5 +1,7 @@
 # NeuroMed-XAI Benchmark
 
+![NeuroMed-XAI Benchmark cover](promo/cover-neuromed-xai-benchmark-v4.svg)
+
 Interpretable EEG benchmarks for biomedical AI research.
 
 This project combines an EEG medical benchmark framework with explainable AI reporting. The first milestone focuses on reproducible baselines, leakage-aware splitting, and report generation for public EEG disease or neurophysiology datasets.
