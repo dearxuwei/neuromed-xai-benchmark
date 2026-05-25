@@ -1,0 +1,106 @@
+<svg width="2400" height="1350" viewBox="0 0 2400 1350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="2400" y2="1350" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#040512"/>
+      <stop offset=".48" stop-color="#101936"/>
+      <stop offset="1" stop-color="#02030A"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1468 572) rotate(93) scale(685 482)">
+      <stop stop-color="#71E8FF" stop-opacity=".44"/>
+      <stop offset=".42" stop-color="#B47CFF" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#B47CFF" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="amber" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1670 788) rotate(32) scale(460 298)">
+      <stop stop-color="#FFB86B" stop-opacity=".42"/>
+      <stop offset="1" stop-color="#FFB86B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="evidence" x1="900" y1="324" x2="1968" y2="916" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#76E8FF"/>
+      <stop offset=".46" stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#FFB86B"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity=".028"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="42"/></filter>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="brain">
+      <path d="M1209 277c-77-12-152 31-183 103-48-5-95 13-127 50-38 43-44 106-16 155-53 25-88 78-88 139 0 85 69 154 154 154h102c25 74 96 127 179 127h295c97 0 176-79 176-176 0-27-6-52-17-75 55-28 92-85 92-151 0-94-76-170-170-170-24 0-47 5-68 14-52-99-161-160-276-142-18-13-36-22-53-28Z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="2400" height="1350" fill="url(#bg)"/>
+  <circle cx="1468" cy="572" r="640" fill="url(#core)" filter="url(#blur)"/>
+  <circle cx="1714" cy="814" r="410" fill="url(#amber)" filter="url(#blur)"/>
+
+  <g opacity=".20">
+    <path d="M0 1112H2400M0 986H2400M0 860H2400M0 734H2400M0 608H2400M0 482H2400" stroke="#9BEAFF" stroke-opacity=".05"/>
+    <path d="M340 124V1226M680 124V1226M1020 124V1226M1360 124V1226M1700 124V1226M2040 124V1226" stroke="#9BEAFF" stroke-opacity=".035"/>
+  </g>
+
+  <g transform="translate(770 186)">
+    <g clip-path="url(#brain)">
+      <rect x="0" y="0" width="1100" height="900" fill="#061126" fill-opacity=".72"/>
+      <g opacity=".78">
+        <path d="M90 586c77-62 149-69 217-20 56 40 108 44 158 12 57-36 107-43 151-22 39 19 73 56 103 110 58 105 150 113 276 24" stroke="url(#evidence)" stroke-width="7" stroke-linecap="round"/>
+        <path d="M90 586c77-62 149-69 217-20 56 40 108 44 158 12 57-36 107-43 151-22 39 19 73 56 103 110 58 105 150 113 276 24" stroke="#DDFBFF" stroke-opacity=".10" stroke-width="30" stroke-linecap="round"/>
+        <path d="M118 390c86-38 158-38 216 0 62 40 123 45 184 15 76-37 151-20 226 51 61 58 132 69 214 33" stroke="#7FE8FF" stroke-opacity=".34" stroke-width="4" stroke-linecap="round"/>
+        <path d="M142 744c72-41 141-47 207-18 57 25 108 20 153-15 64-49 137-48 219 5 89 58 175 52 260-16" stroke="#FFB86B" stroke-opacity=".28" stroke-width="4" stroke-linecap="round"/>
+      </g>
+      <g filter="url(#glow)">
+        <circle cx="228" cy="360" r="13" fill="#7FE8FF"/>
+        <circle cx="358" cy="420" r="15" fill="#A78BFA"/>
+        <circle cx="502" cy="390" r="13" fill="#7FE8FF"/>
+        <circle cx="644" cy="462" r="16" fill="#FFB86B"/>
+        <circle cx="788" cy="542" r="13" fill="#A78BFA"/>
+        <circle cx="914" cy="496" r="14" fill="#7FE8FF"/>
+        <circle cx="268" cy="652" r="15" fill="#FFB86B"/>
+        <circle cx="464" cy="592" r="14" fill="#7FE8FF"/>
+        <circle cx="704" cy="708" r="15" fill="#A78BFA"/>
+        <circle cx="900" cy="732" r="13" fill="#FFB86B"/>
+      </g>
+      <path d="M228 360L358 420L502 390L644 462L788 542L914 496M268 652L464 592L704 708L900 732" stroke="#FFFFFF" stroke-opacity=".10" stroke-width="2" stroke-dasharray="8 10"/>
+    </g>
+    <path d="M1209 277c-77-12-152 31-183 103-48-5-95 13-127 50-38 43-44 106-16 155-53 25-88 78-88 139 0 85 69 154 154 154h102c25 74 96 127 179 127h295c97 0 176-79 176-176 0-27-6-52-17-75 55-28 92-85 92-151 0-94-76-170-170-170-24 0-47 5-68 14-52-99-161-160-276-142-18-13-36-22-53-28Z" stroke="#D9F9FF" stroke-opacity=".25" stroke-width="3"/>
+  </g>
+
+  <g transform="translate(244 408)">
+    <rect x="0" y="0" width="550" height="390" rx="30" fill="url(#glass)" stroke="#CFF8FF" stroke-opacity=".16"/>
+    <text x="48" y="72" fill="#DDFBFF" font-size="28" font-weight="650" font-family="Inter, Segoe UI, Arial">EEG evidence window</text>
+    <g transform="translate(46 112)" stroke-linecap="round">
+      <path d="M0 40c28-22 47-22 57 0 10 22 24 22 42 0 17-22 34-22 51 0 17 22 34 22 51 0 17-22 34-22 51 0 17 22 34 22 51 0 17-22 34-22 51 0 17 22 36 22 57 0" stroke="#7FE8FF" stroke-width="4"/>
+      <path d="M0 110c35-18 64-8 88 31 24 38 53 38 88 0 35-39 70-39 105 0 35 38 70 38 105 0 35-39 70-49 105-31" stroke="#A78BFA" stroke-width="4" opacity=".85"/>
+      <path d="M0 184c52-12 91 4 118 48 26 44 58 44 96 0 38-44 75-44 112 0 38 44 82 60 132 48" stroke="#FFB86B" stroke-width="4" opacity=".82"/>
+    </g>
+    <rect x="48" y="312" width="112" height="28" rx="14" fill="#7FE8FF" fill-opacity=".14" stroke="#7FE8FF" stroke-opacity=".34"/>
+    <rect x="178" y="312" width="112" height="28" rx="14" fill="#A78BFA" fill-opacity=".14" stroke="#A78BFA" stroke-opacity=".34"/>
+    <rect x="308" y="312" width="112" height="28" rx="14" fill="#FFB86B" fill-opacity=".14" stroke="#FFB86B" stroke-opacity=".34"/>
+  </g>
+
+  <g transform="translate(1710 752)">
+    <rect x="0" y="0" width="488" height="310" rx="34" fill="url(#glass)" stroke="#CFF8FF" stroke-opacity=".18"/>
+    <text x="42" y="66" fill="#F4FCFF" font-size="28" font-weight="650" font-family="Inter, Segoe UI, Arial">Interpretable report</text>
+    <text x="42" y="110" fill="#AFC7E8" font-size="20" font-family="Inter, Segoe UI, Arial">subject-wise split · leakage-aware</text>
+    <g transform="translate(48 148)">
+      <rect x="0" y="0" width="76" height="96" rx="12" fill="#7FE8FF" fill-opacity=".13"/>
+      <rect x="98" y="22" width="76" height="74" rx="12" fill="#A78BFA" fill-opacity=".15"/>
+      <rect x="196" y="44" width="76" height="52" rx="12" fill="#FFB86B" fill-opacity=".18"/>
+      <rect x="294" y="12" width="76" height="84" rx="12" fill="#7FE8FF" fill-opacity=".10"/>
+      <path d="M0 122h372" stroke="#DDFBFF" stroke-opacity=".18"/>
+      <text x="0" y="164" fill="#FFCF9A" font-size="20" font-family="Inter, Segoe UI, Arial">channels · bands · saliency · errors</text>
+    </g>
+  </g>
+
+  <g transform="translate(132 142)">
+    <text x="0" y="0" fill="#8FDFFF" font-size="21" letter-spacing="5" font-family="Inter, Segoe UI, Arial">EEG · XAI · BIOMEDICAL BENCHMARK</text>
+    <text x="0" y="114" fill="#F6FBFF" font-size="88" font-weight="760" font-family="Inter, Segoe UI, Arial">NeuroMed-XAI</text>
+    <text x="0" y="210" fill="#F6FBFF" font-size="88" font-weight="760" font-family="Inter, Segoe UI, Arial">Benchmark</text>
+    <text x="0" y="282" fill="#A9C6E8" font-size="30" font-family="Inter, Segoe UI, Arial">Interpretable EEG evidence for biomedical AI research</text>
+  </g>
+
+  <text x="132" y="1232" fill="#7FA3D1" font-size="22" font-family="Inter, Segoe UI, Arial">Seizure detection · sleep staging · channel attribution · frequency evidence · reproducible reporting</text>
+</svg>
